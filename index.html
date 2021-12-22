@@ -1,0 +1,173 @@
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather</title>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Archivo:ital@1&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Anton&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Domine:wght@700&display=swap" rel="stylesheet">
+
+</head>
+
+<body onload="currentLocation()">
+
+
+
+
+    <div class="back pb-5">
+        <div class="m-auto text-center">
+            <img src="images/03_iday.svg" alt="" width="70px" height="70px">
+            <h1 class=" head-font text-white">Weather</h1>
+
+        </div>
+        <div class="background container  ">
+
+
+            <div class="row">
+
+                <div class="col-md-8 my-5  d-flex align-items-content flex-wrap ">
+                    <div class="w-100 overflow-hidden findm  ">
+                        <div class="container py-5">
+                            <div class="position-relative py-4">
+                                <div class="input-group mb-3">
+                                    <input class="form-control" type="text" id="search" onkeyup="search(this.value)"
+                                        placeholder="Find your location..."
+                                        class="form-control rounded-pill text-white">
+                                    <button id="find" class="btn btn-info"><i class="fas fa-search"></i></button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <section class="sec3  pl-5  d-flex align-items-end justify-content-center ">
+                        <div class="container">
+                            <div class="row text-white rounded today ">
+                                <div class="col-md-3 m-auto pl-5  ">
+
+                                    <div class=" pr-5 pt-4 d-flex justify-content-center align-items-center ">
+                                        <h1 id="temp" class="d-inline  pr-2"></h1>
+                                        <i class="fab fa-cuttlefish fa-2x"></i>
+                                    </div>
+
+                                </div>
+                                <div class="col-md-6  ">
+                                    <div class=" day px-5 ">
+                                        <h2 class="" id="place"></h2>
+                                        <div class="days d-flex  align-items-center">
+                                            <p class="pr-3" id="day"></p>
+                                            <p id="dayDate"></p>
+
+                                        </div>
+                                        <img alt="" id="todayState" class=" ">
+                                        <p class="text-white days" id="dayState"></p>
+
+                                    </div>
+                                </div>
+                                <div class="col-md-3 m-auto days ">
+                                    <div class="  ">
+                                        <div class=""><span><i class="fas fa-umbrella"></i></span> <span>
+                                            </span><span id="dayRain"></span></div>
+                                        <div class="py-4"><span><i class="fas fa-wind"></i></span><span> </span><span
+                                                id="dayWind"></span></div>
+                                        <div class=""><span><i class="far fa-compass"></i></span><span>
+                                            </span><span id="dayWindDir"></span></div>
+
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                </div>
+                <div class="col-md-4 text-white background2 d-block">
+
+                    <div class=" row d-flex py-5  next-day rounded text-center dayy">
+                        <div class="col-md-4 d-flex justify-content-center  m-auto">
+                            <div class="row next ml-5 today  ">
+                                <p id="secondDay"></p>
+                            </div>
+                        </div>
+                        <div class="col-md-8">
+                            <div>
+                                <img class="" id="secondDayIcon" alt="">
+                                <h3 id="secondDayTempHigh"></h3>
+                                <h4 id="secondDayTempLow" class="light"></h4>
+                                <p id="secondDayState" class="text-info h6 "></p>
+                            </div>
+                        </div>
+                    </div>
+                    <hr class="line w-75 m-auto">
+                    <div class="  row d-flex py-5 rounded text-center dayy">
+                        <div class="col-md-4 d-flex justify-content-center   m-auto">
+                            <div class="row next ml-5 today ">
+                                <p id="thirdDay"></p>
+                            </div>
+                        </div>
+                        <div class="col-md-8">
+                            <div>
+                                <img class="" id="thirdDayIcon" alt="">
+                                <h3 id="thirdDayTempHigh"></h3>
+                                <h4 class=" light" id="thirdDayTempLow"></h4>
+                                <p class="text-info h6 " id="thirdDayState"></p>
+                            </div>
+                        </div>
+                    </div>
+                    <hr class="line  w-75 m-auto">
+                    <section class="sec4 m-auto">
+
+
+                        <div class=" d-block">
+                            <div class="position-relative py-5 ">
+                                <input type="text" class="form-control rounded-pill"
+                                    placeholder="Enter your Email to subscribe...">
+                                <input type="button" class="position-absolute rounded-pill" id="subscribe"
+                                    value="Subscribe">
+                            </div>
+                        </div>
+                        <div class="d-flex justify-content-center align-itmes-center">
+                            <div class="brder mr-2 "><a href="" class=""><i class="fab fa-facebook-f"></i></a>
+                            </div>
+                            <div class="brder mr-2 "><a href="" class=""><i class="fab fa-twitter"></i></a>
+                            </div>
+                            <div class="brder mr-2 "><a href="" class=""><i class="fab fa-google-plus-g "></i></a>
+                            </div>
+                            <div class="brder mr-2 "><a href="" class=""><i class="fab fa-pinterest-p"></i></a>
+                            </div>
+                        </div>
+
+                        <p class=" bla pt-5">© 2022 Copyright Company name. Designed by Mohamed Zaghlol</p>
+
+
+                    </section>
+                </div>
+
+            </div>
+        </div>
+
+
+
+
+    </div>
+
+
+    </div>
+
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.1/moment.min.js"
+        integrity="sha512-qTXRIMyZIFb8iQcfjXWCO8+M5Tbc38Qi5WzdPOYZHIlZpzBHG3L3by84BBBOiRGiEb7KKtAOAs5qYdUiZiQNNQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/all.min.js"></script>
+    <script src="js/main.js"></script>
+</body>
+
+</html>

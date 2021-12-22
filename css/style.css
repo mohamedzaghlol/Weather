@@ -1,0 +1,131 @@
+small {
+  font-size: 10px;
+}
+.head-font {
+  font-family: "Dancing Script", cursive;
+}
+
+nav {
+  background-color: #242424;
+  color: white;
+}
+nav ul li a {
+  border: 2px solid transparent;
+}
+.home {
+  border: 2px solid #009ad8;
+  color: #009ad8 !important;
+  border-radius: 30px;
+}
+nav ul li a:hover {
+  border: 2px solid #009ad8;
+  color: #009ad8 !important;
+  border-radius: 30px;
+}
+/*------------------------------------------------------------------------------------------*/
+.back {
+  background-color: #242424;
+}
+.background {
+  background-image: url(../images/abhishek-yadav-cqUyb7Yoxj8-unsplash.jpg);
+  background-size: 100% 100%;
+  box-shadow: 20px 20px 20px 15px black;
+  border-radius: 20px;
+  height: auto;
+}
+.background2 {
+  background-color: rgba(0, 0, 0, 0.486);
+  height: 100%;
+  backdrop-filter: blur(8px);
+}
+/*-------------------------------------------------------------------------------------*/
+input[type="text"] {
+  background-color: #242424;
+  border: none;
+  padding: 30px;
+}
+input[type="text"]:focus {
+  box-shadow: none;
+  background-color: #1e202b;
+}
+.line {
+  background-color: #009ad8;
+  height: 3px;
+  border-radius: 50%;
+}
+
+#find {
+  top: 29px;
+  right: 5px;
+  border: none;
+  background-color: #009ad8;
+  color: white;
+  padding: 13 40px;
+}
+#temp {
+  font-size: 90px;
+  line-height: 135px;
+}
+.days {
+  font-size: 15px;
+}
+.today {
+  font-family: "Domine", serif;
+  font-size: 20px;
+}
+
+.section1 {
+  display: block;
+  position: relative;
+  bottom: 0%;
+  left: 0%;
+}
+.dayy {
+  font-size: 20px;
+  font-family: "Anton", sans-serif;
+}
+
+.light {
+  color: #bfc1c8;
+  font-weight: 300;
+  font-size: 16px;
+}
+
+#subscribe {
+  top: 52px;
+  right: 5px;
+  border: none;
+  background-color: #009ad8;
+  color: white;
+  padding: 14 16px;
+}
+.sec4 a {
+  text-decoration: none;
+  color: #019ad8;
+  transition: all 0.3s;
+}
+.brder {
+  width: 39.5px;
+  height: 40px;
+  margin-left: 5px;
+  background-color: #242424;
+  padding: 11px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: all 0.3s;
+}
+.bla {
+  color: white;
+  text-align: center;
+}
+.brder:hover {
+  background-color: #019ad8;
+}
+.brder:hover a {
+  color: white;
+}
+.brder:hover a i {
+  color: white;
+}
